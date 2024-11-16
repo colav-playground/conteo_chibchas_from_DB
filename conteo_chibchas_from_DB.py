@@ -10,4 +10,4 @@ for t in df.columns:
     else:
         ll=df[t].dropna().shape[0]
     print( f'{t} → {ll}' )
-    p=pd.concat((p,pd.DataFrame([{'Producto':t,'Cantidad':ll}])))#p.append( {'Producto':t,'Cantidad':ll},ignore_index=True ) 
+    p=pd.concat((p,pd.DataFrame([{'Producto':t,'Cantidad':ll}])))
